@@ -19,7 +19,7 @@ export class HomePage {
 
   calcir(formu: { value: { sal: any; }; }) {
     let sal = formu.value.sal;
-    ''
+    
     if (sal <= 2000) {
       this.txir = 0;
     } else if (2001 <= sal && sal <= 5000) {

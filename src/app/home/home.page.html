@@ -10,25 +10,25 @@
  <form #formulario="ngForm">
     <br><br><br>
     <ion-item>
-      <ion-label>Salário Bruto: </ion-label>
+      <ion-label position = "floating">Salário Bruto: </ion-label>
       <ion-input name="sal" ngModel></ion-input>
     </ion-item><br><br>
 
     <ion-item>
-      <ion-label>Faltas: </ion-label>
+      <ion-label position = "floating">Faltas: </ion-label>
       <ion-input name="fal" ngModel></ion-input>
     </ion-item><br><br>
 
     <ion-item>
-      <ion-label>Horas Extras: </ion-label>
+      <ion-label position = "floating">Horas Extras: </ion-label>
       <ion-input name="hex" ngModel></ion-input>
     </ion-item><br><br>
 
     <ion-button (click)="descon(formulario)">Calcular Salário Líquido</ion-button>
-   
+    <ion-button (click)="this.formulario.reset();this.salarioliq = 0">Limpar Formulário</ion-button>
     <br><br>
     <ion-item>
-      <ion-label>Salário Líquido: </ion-label>
+      <ion-label position = "floating">Salário Líquido: </ion-label>
       <ion-input disabled value="{{salarioliq}}"></ion-input>
     </ion-item>
    
